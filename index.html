@@ -10,36 +10,52 @@
             background-color: #262626;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
         
         .container {
             background-color: #444;
             border-radius: 20px;
             padding: 20px;
-            width: 100%;
-            max-width: 100%;
+            width: 80%;
+            max-width: 1200px;
+            margin: 50px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .banner {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
         
         li {
-            padding: 10px;
+            padding: 5px 10px;
             border-radius: 10px;
             background-color: #3498db;
             color: #fff;
             font-size: 14px;
-            list-style-type: none;
             text-align: center;
             transition: all 0.3s ease;
             cursor: pointer;
-            width: calc(20% - 20px); /* 20% of the container width with 10px gap on each side */
+            width: calc(20% - 10px); /* 20% of the container width with 10px gap on each side */
             margin-bottom: 10px;
             border: 2px solid #1a1a1a;
         }
@@ -53,93 +69,98 @@
 </head>
 <body>
     <div class="container">
-        <li>Wheat</li>
-        <li>Tomato</li>
-        <li>Carrot</li>
-        <li>Berry</li>
-        <li>Onion</li>
-        <li>Red-Flowers</li>
-        <li>Yellow-Flowers</li>
-        <li>Blue-Flowers</li>
-        <li>Tall-Grass</li>
-        <li>Stone-Brick</li>
-        <li>Wood</li>
-        <li>Wood-Plank</li>
-        <li>Pine-Wood</li>
-        <li>Pine-Wood-Plank</li>
-        <li>Grass-Block</li>
-        <li>Glass-Pane</li>
-        <li>Glass-Pane-(Colored)</li>
-        <li>Clay</li>
-        <li>Clay-(Colored)</li>
-        <li>Red-Rug</li>
-        <li>Wood-Stairs</li>
-        <li>Pine-Stairs</li>
-        <li>Stone-Stairs</li>
-        <li>Brick-Stairs</li>
-        <li>Wood-Fence</li>
-        <li>Pine-Fence</li>
-        <li>Ladder</li>
-        <li>Pine-Door</li>
-        <li>Stone-Totem</li>
-        <li>Coal-Totem</li>
-        <li>Iron-Totem</li>
-        <li>Clay-Totem</li>
-        <li>Wheat-Totem</li>
-        <li>Tomato-Totem</li>
-        <li>Carrot-Totem</li>
-        <li>Onion-Totem</li>
-        <li>Medium-Chest</li>
-        <li>Steel-Rod</li>
-        <li>Conveyor-Belt</li>
-        <li>Left-Conveyor</li>
-        <li>Right-Conveyor</li>
-        <li>Industrial-Chest</li>
-        <li>Industrial-Oven</li>
-        <li>Industrial-Sawmill</li>
-        <li>Industrial-Smelter</li>
-        <li>Workbench-Tier-1</li>
-        <li>Workbench-Tier-2</li>
-        <li>Anvil</li>
-        <li>Sawmill</li>
-        <li>Stonecutter</li>
-        <li>Coloring-Station</li>
-        <li>Campfire</li>
-        <li>Cooking-Table</li>
-        <li>Floral-Bench</li>
-        <li>Small-Furnace</li>
-        <li>Small-Chest</li>
-        <li>Dough</li>
-        <li>Berry-Dough</li>
-        <li>Bread</li>
-        <li>Berry-Pie</li>
-        <li>Wheat-Seeds</li>
-        <li>Tomato-Seeds</li>
-        <li>Carrot-Seeds</li>
-        <li>Berry-Seeds</li>
-        <li>Onion-Seeds</li>
-        <li>Red-Flower-Seeds</li>
-        <li>Yellow-Flower-Seeds</li>
-        <li>Blue-Flower-Seeds</li>
-        <li>Sapling</li>
-        <li>Pine-Sapling</li>
-        <li>Green-Slime-Balls</li>
-        <li>Blue-Slime-Balls</li>
-        <li>Pink-Slime-Balls</li>
-        <li>Green-Gear</li>
-        <li>Blue-Gear</li>
-        <li>Pink-Gear</li>
-        <li>Wooden-Axe</li>
-        <li>Wooden-Pickaxe</li>
-        <li>Wooden-Sword</li>
-        <li>Plow</li>
-        <li>Stone-Axe</li>
-        <li>Stone-Pickaxe</li>
-        <li>Iron-Axe</li>
-        <li>Iron-Pickaxe</li>
-        <li>Coal</li>
-        <li>Iron-Ore</li>
-        <li>Iron</li>
+        <div class="banner">
+            <h1>The following available items:</h1>
+        </div>
+        <ul>
+            <li>Wheat</li>
+            <li>Tomato</li>
+            <li>Carrot</li>
+            <li>Berry</li>
+            <li>Onion</li>
+            <li>Red-Flowers</li>
+            <li>Yellow-Flowers</li>
+            <li>Blue-Flowers</li>
+            <li>Tall-Grass</li>
+            <li>Stone-Brick</li>
+            <li>Wood</li>
+            <li>Wood-Plank</li>
+            <li>Pine-Wood</li>
+            <li>Pine-Wood-Plank</li>
+            <li>Grass-Block</li>
+            <li>Glass-Pane</li>
+            <li>Glass-Pane-(Colored)</li>
+            <li>Clay</li>
+            <li>Clay-(Colored)</li>
+            <li>Red-Rug</li>
+            <li>Wood-Stairs</li>
+            <li>Pine-Stairs</li>
+            <li>Stone-Stairs</li>
+            <li>Brick-Stairs</li>
+            <li>Wood-Fence</li>
+            <li>Pine-Fence</li>
+            <li>Ladder</li>
+            <li>Pine-Door</li>
+            <li>Stone-Totem</li>
+            <li>Coal-Totem</li>
+            <li>Iron-Totem</li>
+            <li>Clay-Totem</li>
+            <li>Wheat-Totem</li>
+            <li>Tomato-Totem</li>
+            <li>Carrot-Totem</li>
+            <li>Onion-Totem</li>
+            <li>Medium-Chest</li>
+            <li>Steel-Rod</li>
+            <li>Conveyor-Belt</li>
+            <li>Left-Conveyor</li>
+            <li>Right-Conveyor</li>
+            <li>Industrial-Chest</li>
+            <li>Industrial-Oven</li>
+            <li>Industrial-Sawmill</li>
+            <li>Industrial-Smelter</li>
+            <li>Workbench-Tier-1</li>
+            <li>Workbench-Tier-2</li>
+            <li>Anvil</li>
+            <li>Sawmill</li>
+            <li>Stonecutter</li>
+            <li>Coloring-Station</li>
+            <li>Campfire</li>
+            <li>Cooking-Table</li>
+            <li>Floral-Bench</li>
+            <li>Small-Furnace</li>
+            <li>Small-Chest</li>
+            <li>Dough</li>
+            <li>Berry-Dough</li>
+            <li>Bread</li>
+            <li>Berry-Pie</li>
+            <li>Wheat-Seeds</li>
+            <li>Tomato-Seeds</li>
+            <li>Carrot-Seeds</li>
+            <li>Berry-Seeds</li>
+            <li>Onion-Seeds</li>
+            <li>Red-Flower-Seeds</li>
+            <li>Yellow-Flower-Seeds</li>
+            <li>Blue-Flower-Seeds</li>
+            <li>Sapling</li>
+            <li>Pine-Sapling</li>
+            <li>Green-Slime-Balls</li>
+            <li>Blue-Slime-Balls</li>
+            <li>Pink-Slime-Balls</li>
+            <li>Green-Gear</li>
+            <li>Blue-Gear</li>
+            <li>Pink-Gear</li>
+            <li>Wooden-Axe</li>
+            <li>Wooden-Pickaxe</li>
+            <li>Wooden-Sword</li>
+            <li>Plow</li>
+            <li>Stone-Axe</li>
+            <li>Stone-Pickaxe</li>
+            <li>Iron-Axe</li>
+            <li>Iron-Pickaxe</li>
+            <li>Coal</li>
+            <li>Iron-Ore</li>
+            <li>Iron</li>
+        </ul>
     </div>
 </body>
 </html>
