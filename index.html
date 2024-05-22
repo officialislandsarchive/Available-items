@@ -7,16 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0f0f0f;
+            background-color: #262626;
             margin: 0;
             padding: 0;
         }
         
         .container {
-            background-color: #222;
+            background-color: #444;
             border-radius: 20px;
             padding: 20px;
-            width: 90%;
+            width: 80%;
             max-width: 1200px;
             margin: 50px auto;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -31,12 +31,10 @@
         .banner {
             background-color: #3498db;
             color: #fff;
-            padding: 20px;
-            border-radius: 20px;
+            padding: 10px;
+            border-radius: 10px;
             text-align: center;
             margin-bottom: 20px;
-            font-size: 24px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
         
         ul {
@@ -49,29 +47,50 @@
         }
         
         li {
-            padding: 10px 20px;
-            border-radius: 20px;
-            background-color: #2980b9;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #3498db;
             color: #fff;
-            font-size: 16px;
+            font-size: 14px;
             text-align: center;
             transition: all 0.3s ease;
             cursor: pointer;
+            width: calc(20% - 10px); /* 20% of the container width with 10px gap on each side */
             margin-bottom: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 2px solid #1a1a1a;
         }
         
         li:hover {
-            background-color: #2c3e50;
+            background-color: #2980b9;
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-btn:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="banner">
-            <h1>Available items to use for the bot commands on Discord</h1>
+            <h1>The Following Available Items:</h1>
         </div>
         <ul>
             <li>Wheat</li>
@@ -160,8 +179,24 @@
             <li>Iron-Pickaxe</li>
             <li>Coal</li>
             <li>Iron-Ore</li>
-            <li>Iron</li>
+            <li>Iron</li>    
         </ul>
+        <div class="navigation">
+            <button class="navigation-btn" onclick="previousPage()">Previous</button>
+            <button class="navigation-btn" onclick="nextPage()">Next</button>
+        </div>
     </div>
+
+    <script>
+        // Dummy function for previous page
+        function previousPage() {
+            alert("Go to previous page");
+        }
+
+        // Dummy function for next page
+        function nextPage() {
+            alert("Go to next page");
+        }
+    </script>
 </body>
 </html>
